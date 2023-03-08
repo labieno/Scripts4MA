@@ -1,2 +1,3 @@
 # Scripts_4_MA
-Scripts for malware analysis
+*Scripts for malware analysis*
+Extracting configs, IOCs...
