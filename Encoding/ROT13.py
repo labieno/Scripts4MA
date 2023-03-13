@@ -1,6 +1,6 @@
 #ROT13 with custom alphabet:
 def decryptit(string):
-    key = ""
+    key = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890./="
     decrypted_str = ""
     for c in string:
         i = key.find(c)
