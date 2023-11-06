@@ -3,17 +3,17 @@
 
 Automating unpacking routine, extracting configs, IOCs... 
 
-Decrypting
+- Decrypting
     - RC4
     - XOR
-Encoding/Decoding
+- Encoding/Decoding
     - ROT13
-Hashing
+- Hashing
     - CRC32
-IDA
+- IDA
     - IDAPython
     - IDC
-MalwareTechniques
+- MalwareTechniques
     - Injection
         . selfInjection
         . classicCodeInjection
@@ -29,4 +29,4 @@ MalwareTechniques
         . API hooking
         ...
     - Loaders
-Powershell
+- Powershell
