@@ -15,18 +15,18 @@ Automating unpacking routine, extracting configs, IOCs...
     - IDC
 - MalwareTechniques
     - Injection
-        . selfInjection
-        . classicCodeInjection
-        . classicDllInjection
-        . Dll1: code in main (could execute a function)
-        . Dll2: code in export function
-        . APC Injection
-        . EarlyBird
-        . Process Hollowing
-        . Reflective Dll
-        . Process Doppelganging
-        . PROPgate Injection
-        . API hooking
-        ...
+        - selfInjection
+        - classicCodeInjection
+        - classicDllInjection
+        - Dll1: code in main (could execute a function)
+        - Dll2: code in export function
+        - APC Injection
+        - EarlyBird
+        - Process Hollowing
+        - Reflective Dll
+        - Process Doppelganging
+        - PROPgate Injection
+        - API hooking
+        - ...
     - Loaders
 - Powershell
