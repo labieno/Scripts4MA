@@ -1,7 +1,7 @@
 # Scripts4MA
 **Scripts for malware analysis**
 
-Automating unpacking routine, extracting configs, IOCs...
+Code snippets, implementing and detection malware techniques, automating unpacking routines, extracting configs, IOCs...
 
 _Content:_
 
