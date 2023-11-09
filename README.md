@@ -16,14 +16,20 @@ _Content:_
     - IDAPython
     - IDC
 - **MalwareTechniques**
-    - Injection
-        - *selfInjection*
-        - *classicCodeInjection*
-        - *classicDllInjection*
-        - *Dll1*: code in main (could execute a function)
-        - *Dll2*: code in export function
+    - Enumeration
+        - *enumerateProcesses* : CreateToolhelp32Snapshot, Process32First, Process32Next
+        - *enumerateProcessesTree*
         - ...
-        - *APC Injection*
+        - *enumerateThreads*
+    - Injection
+        - *selfInjection* : VirtualAlloc, RtlMoveMemory, VirtualProtect, CreateThread, WaitForSingleObject
+        - *classicCodeInjection* : OpenProcess, VirtualAllocEx, WriteProcessMemory, CreateRemoteThread
+        - *classicDllInjection*: GetModuleHanlde, GetProcAddress (LoadLibraryA) + classicCodeInjection
+        - *Dll1*: code in main
+        - *Dll2*: code in export function
+        - *APC Injection*: OpenThread, QueueUserAPC, Sleep + classicCodeInjection
+        - ...
+        - *APC Injection NlTestAlert*
         - *EarlyBird*: suspended remote process
         - *Dll hijacking & sideloading*
         - *Process Hollowing*
