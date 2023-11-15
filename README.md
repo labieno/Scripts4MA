@@ -23,28 +23,28 @@ _Content:_
         - ...
         - *enumerateThreads*
     - Injection
-        - *selfInjection*
-            - VirtualAlloc, RtlMoveMemory, VirtualProtect, CreateThread, WaitForSingleObject
-        - *classicCodeInjection*
-            - OpenProcess, VirtualAllocEx, WriteProcessMemory, CreateRemoteThread
-        - *classicDllInjection*
-            - GetModuleHanlde, GetProcAddress (LoadLibraryA) + classicCodeInjection
-        - *Dll1*
-            - Code in main
-        - *Dll2*
-            - Code in export function
-        - *APC Injection*
-            - OpenThread, QueueUserAPC, Sleep + classicCodeInjection
+        - selfInjection
+            - *VirtualAlloc, RtlMoveMemory, VirtualProtect, CreateThread, WaitForSingleObject*
+        - classicCodeInjection
+            - *OpenProcess, VirtualAllocEx, WriteProcessMemory, CreateRemoteThread*
+        - classicDllInjection
+            - *GetModuleHanlde, GetProcAddress (LoadLibraryA) + classicCodeInjection*
+        - Dll1
+            - *Code in main*
+        - Dll2
+            - *Code in export function*
+        - APC Injection
+            - *OpenThread, QueueUserAPC, Sleep + classicCodeInjection*
         - ...
-        - *APC Injection NlTestAlert*
-        - *EarlyBird*
-            - suspended remote process
-        - *Dll hijacking & sideloading*
-        - *Process Hollowing*
-        - *Reflective Dll*
-        - *Process Doppelganging*
-        - *PROPgate Injection*
-        - *API hooking*
+        - APC Injection NlTestAlert
+        - EarlyBird
+            - *Suspended remote process*
+        - Dll hijacking & sideloading
+        - Process Hollowing
+        - Reflective Dll
+        - Process Doppelganging
+        - PROPgate Injection
+        - API hooking
         - ...
     - Loaders
 - **Powershell**
