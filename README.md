@@ -17,11 +17,11 @@ _Content:_
     - IDC
 - **MalwareTechniques**
     - Enumeration
-        - *enumerateProcesses*
-            - CreateToolhelp32Snapshot, Process32First, Process32Next
-        - *enumerateProcessesTree*
+        - enumerateProcesses
+            - *CreateToolhelp32Snapshot, Process32First, Process32Next*
+        - enumerateProcessesTree
         - ...
-        - *enumerateThreads*
+        - enumerateThreads
     - Injection
         - selfInjection
             - *VirtualAlloc, RtlMoveMemory, VirtualProtect, CreateThread, WaitForSingleObject*
@@ -35,10 +35,10 @@ _Content:_
             - *Code in export function*
         - APC Injection
             - *OpenThread, QueueUserAPC, Sleep + classicCodeInjection*
+        - EarlyBird
+            - *CreateProcessA (suspended), VirtualAllocEx, WriteProcessMemory, QueueUserAPC, ResumeThread*
         - ...
         - APC Injection NlTestAlert
-        - EarlyBird
-            - *Suspended remote process*
         - Dll hijacking & sideloading
         - Process Hollowing
         - Reflective Dll
@@ -46,5 +46,14 @@ _Content:_
         - PROPgate Injection
         - API hooking
         - ...
+    - Communications
+    - Stealing
+        - Keylog
+        - Store credentials
+        - ...
+    - Miscellaneous
+        - Self destruction
     - Loaders
 - **Powershell**
+- **Python**
+    - Process Memoria Scanner with Yara
