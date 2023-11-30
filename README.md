@@ -37,8 +37,9 @@ _Content:_
             - *OpenThread, QueueUserAPC, Sleep + classicCodeInjection*
         - EarlyBird
             - *CreateProcessA (suspended), VirtualAllocEx, WriteProcessMemory, QueueUserAPC, ResumeThread*
-        - ...
         - APC Injection NlTestAlert
+            - *VirtualAlloc, WriteProcessMemory, QueueUserAPC, NtTestAlert*
+        - ...
         - Dll hijacking & sideloading
         - Process Hollowing
         - Reflective Dll
